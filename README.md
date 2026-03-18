@@ -116,6 +116,16 @@ Advanced analytics dashboard for treatment insights
 
 AI-driven personalized medication reminders
 
+## Setup Instructions
+
+1. Create a Groq API key from Groq dashboard
+2. Set environment variable:
+
+   GROQ_API_KEY=your_api_key_here
+
+3. Run the backend application
+
+
 Acknowledgement
 
 We would like to thank Infosys Springboard for providing this learning opportunity and platform. Special thanks to our mentor for their guidance and support throughout the project. We also appreciate the teamwork and collaboration of all team members who contributed to the successful development of this project.
