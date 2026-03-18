@@ -24,32 +24,14 @@ Doctor – Prescribes medicines and monitors patients
 
 Patient – Tracks medications and requests refills
 
-The platform ensures smooth communication and data sharing between all users.
-
 4. Technology Stack
 Frontend
 
-React
-
-Vite
-
-Tailwind CSS
-
-React Router
-
-TypeScript
+React, Vite, Tailwind CSS, React Router, TypeScript
 
 Backend
 
-Java
-
-Spring Boot
-
-REST APIs
-
-LLaMA Model
-
-Groq API
+Java, Spring Boot, REST APIs, LLaMA Model, Groq API
 
 Database
 
@@ -57,116 +39,97 @@ MongoDB
 
 Tools
 
-VS Code
-
-Git & GitHub
-
-Postman
+VS Code, Git & GitHub, Postman
 
 5. Key Features
-5.1 Secure Authentication
 
-JWT-based login system
+Secure Authentication (JWT-based login, role-based access)
 
-Role-based access control
+Medication Tracking (schedule and dosage tracking)
 
-5.2 Medication Tracking
+Prescription Management (doctor-managed prescriptions)
 
-Track daily medicine schedules
+Refill Requests (online approval system)
 
-View dosage and treatment progress
-
-5.3 Prescription Management
-
-Doctors create and update prescriptions
-
-Patients access prescription history
-
-5.4 Refill Requests
-
-Patients request refills online
-
-Doctors approve or reject requests
-
-5.5 AI Chatbot
-
-Answers queries related to medicines and symptoms
-
-Provides intelligent responses using AI
+AI Chatbot (smart responses using AI)
 
 6. System Workflow
 
-The system workflow starts with user registration, where users create an account by selecting their role. After registration, users log in through authentication, which securely verifies their credentials. Once logged in, users manage their profile information. Patients can then track their medications and schedules, while doctors prescribe medicines by adding prescription details for patients.
+The workflow starts with user registration, followed by secure authentication. After login, users manage their profiles. Patients track medications, while doctors prescribe medicines and manage prescriptions efficiently through the system.
 
 7. Database Design
 
-The system uses MongoDB with the following collections:
-
-Users – Stores user details and roles
-
-Medications – Contains medicine and dosage information
-
-Prescriptions – Links doctors, patients, and medications
-
-Refill Requests – Tracks refill processes
+Collections include Users, Medications, Prescriptions, and Refill Requests to manage all system data efficiently.
 
 8. API Structure
 
-The backend provides REST APIs such as:
-
-POST /api/auth/login – User login
-
-GET /api/medications – Fetch medications
-
-POST /api/prescriptions – Create prescription
-
-PUT /api/refills/{id} – Approve refill request
+Includes REST APIs for authentication, medication tracking, prescription creation, and refill management.
 
 9. System Architecture
 
-The system follows a three-layer architecture:
+Three-layer architecture:
 
-Frontend Layer – User interface built with React
+Frontend (React UI)
 
-Backend Layer – Business logic using Spring Boot
+Backend (Spring Boot logic)
 
-Database Layer – Data storage using MongoDB
+Database (MongoDB storage)
 
-10. Challenges and Solutions
-Challenge: Medication Adherence
+🚀 10. Project Milestones
+Milestone 1: Project Setup
 
-Patients forget to take medicines on time
-Solution: Digital reminders and tracking system
+Repository creation using Git & GitHub
 
-Challenge: Prescription Management
+Basic project structure setup
 
-Difficult for doctors to monitor patients
-Solution: Centralized platform for real-time updates
+Initial planning and requirement analysis
 
-Challenge: Refill Coordination
+Milestone 2: Core Development
 
-Manual refill process causes delays
-Solution: Online refill request system
+Backend basic functionalities implemented
 
-11. Future Enhancements
+UI design and frontend structure created
 
-Mobile application development
+JWT authentication system added
 
-Integration with pharmacy systems
+Milestone 3: Integration Phase
 
-Wearable device integration
+Complete backend development with all features
 
-AI-based personalized reminders
+Frontend connected with backend APIs
 
-Advanced analytics dashboard
+Full system functionality achieved
 
-12. Conclusion
+Milestone 4: Finalization
 
-The Online Medication & Prescription Tracker provides an efficient and secure solution for managing medications digitally. It improves patient adherence, simplifies prescription handling, and enhances communication between healthcare stakeholders.
+API integration completed
 
-13. Acknowledgement
+AI chatbot implemented using Groq API
 
-We would like to thank Infosys Springboard and our mentor for their guidance and support. We also appreciate the efforts of all team members in successfully completing this project.
+PPT preparation and project presentation
 
+11. Challenges and Solutions
 
+Medication adherence → solved with tracking system
 
+Prescription management → centralized platform
+
+Refill delays → online request system
+
+12. Future Enhancements
+
+Mobile app development
+
+Pharmacy integration
+
+Wearable device support
+
+AI-based reminders and analytics
+
+13. Conclusion
+
+The system provides an efficient and secure solution for managing medications digitally, improving patient care and communication.
+
+14. Acknowledgement
+
+We thank Infosys Springboard, our mentor, team members, and audience for their support and guidance in completing this project successfully.
