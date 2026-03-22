@@ -1,0 +1,184 @@
+📄 Project Plan
+Online Medication & Prescription Tracker
+1. Project Title
+
+Online Medication & Prescription Tracker
+
+2. Problem Statement
+
+In traditional healthcare systems, patients often face difficulties in managing their medications and remembering dosage schedules.
+ Doctors also find it challenging to monitor patient adherence and update prescriptions efficiently.
+  Manual processes for prescription handling and refill requests can lead to delays, errors, and poor communication between patients and healthcare providers.
+
+Therefore, there is a need for a centralized digital system that can simplify medication tracking, improve prescription management, and enhance communication between patients, doctors, and administrators.
+
+3. Project Description
+
+The Online Medication & Prescription Tracker is a full-stack web application designed to help patients, doctors, and administrators manage medications and prescriptions digitally. 
+The system improves medication adherence, simplifies prescription management, and enhances communication within the healthcare system.
+
+4. Project Objectives
+
+To develop a secure platform for managing prescriptions
+
+To help patients track medication schedules and dosage
+
+To enable doctors to monitor and update treatment plans
+
+To automate refill request processes
+
+To integrate AI chatbot support for user queries
+
+5. Scope of the Project
+
+The project includes:
+
+User registration and authentication
+
+Role-based access (Admin, Doctor, Patient)
+
+Medication tracking system
+
+Prescription management
+
+Refill request handling
+
+AI chatbot integration
+
+The project does not include:
+
+Real-time hospital system integration
+
+Live pharmacy billing systems
+
+6. Technology Stack
+Frontend
+
+React
+
+Vite
+
+Tailwind CSS
+
+React Router
+
+TypeScript
+
+Backend
+
+Java
+
+Spring Boot
+
+REST APIs
+
+LLaMA Model
+
+Groq API
+
+Database
+
+MongoDB
+
+Tools
+
+VS Code
+
+Git & GitHub
+
+Postman
+
+7. Project Timeline (Milestones)
+Milestone 1: Planning & Setup
+
+Project idea finalization
+
+Requirement analysis
+
+GitHub repository creation
+
+Initial project structure setup
+
+Milestone 2: Development Phase
+
+Backend basic API development
+
+Frontend UI design
+
+JWT authentication implementation
+
+Milestone 3: Integration Phase
+
+Complete backend functionality
+
+Connect frontend with backend APIs
+
+Testing of core features
+
+Milestone 4: Final Phase
+
+AI chatbot integration using Groq API
+
+PPT preparation and documentation
+
+Final testing and project submission
+
+8. System Requirements
+Hardware Requirements
+
+Computer/Laptop
+
+Internet connection
+
+Software Requirements
+
+Node.js
+
+Java JDK
+
+MongoDB
+
+VS Code
+
+Web browser
+
+9. Team Roles & Responsibilities
+
+Frontend Developers
+
+Design user interface using React and Tailwind CSS
+
+Implement navigation and UI components
+
+Backend Developers
+
+Develop REST APIs using Spring Boot
+
+Handle business logic and database integration
+
+Team Collaboration
+
+Version control using Git
+
+API testing using Postman
+
+10. Risk Management
+Risk	Solution
+API key exposure	Use environment variables
+Data security issues	Implement JWT authentication
+Integration errors	Proper API testing
+User errors	Simple UI design
+11. Deliverables
+
+Fully functional web application
+
+Project documentation
+
+PPT presentation
+
+Source code on GitHub
+
+12. Conclusion
+
+This project plan provides a structured approach to developing the Online Medication & Prescription Tracker.
+ By following defined milestones and using modern technologies, the system aims to deliver an efficient, secure, and user-friendly healthcare solution.

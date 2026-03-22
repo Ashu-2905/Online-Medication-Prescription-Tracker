@@ -266,7 +266,7 @@ const createPrescription = async (prescriptionData) => {
 
 ### Test Users Created:
 - **Patient**: patient@test.com / password123
-- **Doctor**: doctor@test.com / password123  
+- **Doctor**: doctor@test.com / password123
 - **Admin**: admin@test.com / password123
 
 All APIs are fully functional and ready for frontend integration!

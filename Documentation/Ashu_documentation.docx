@@ -1,10 +1,17 @@
 📄 Online Medication & Prescription Tracker
 Project Documentation
+
 1. Introduction
 
 The Online Medication & Prescription Tracker is a full-stack web application designed to simplify medication management for patients and improve communication between doctors and patients. The system provides a centralized platform where users can manage prescriptions, track medications, and request refills digitally.
 
-2. Objectives
+2. Problem Statement
+
+In traditional healthcare systems, patients often face difficulties in managing their medications and remembering dosage schedules. Doctors also find it challenging to monitor patient adherence and update prescriptions efficiently. Manual processes for prescription handling and refill requests can lead to delays, errors, and poor communication between patients and healthcare providers.
+
+Therefore, there is a need for a centralized digital solution that can streamline medication tracking, improve prescription management, and ensure better coordination between patients, doctors, and administrators.
+
+3. Objectives
 
 To help patients track their medications and schedules
 
@@ -14,7 +21,7 @@ To reduce manual errors and delays in medication management
 
 To provide a secure and centralized healthcare system
 
-3. System Overview
+4. System Overview
 
 The system connects three main users:
 
@@ -24,7 +31,7 @@ Doctor – Prescribes medicines and monitors patients
 
 Patient – Tracks medications and requests refills
 
-4. Technology Stack
+5. Technology Stack
 Frontend
 
 React, Vite, Tailwind CSS, React Router, TypeScript
@@ -41,7 +48,7 @@ Tools
 
 VS Code, Git & GitHub, Postman
 
-5. Key Features
+6. Key Features
 
 Secure Authentication (JWT-based login, role-based access)
 
@@ -53,19 +60,19 @@ Refill Requests (online approval system)
 
 AI Chatbot (smart responses using AI)
 
-6. System Workflow
+7. System Workflow
 
 The workflow starts with user registration, followed by secure authentication. After login, users manage their profiles. Patients track medications, while doctors prescribe medicines and manage prescriptions efficiently through the system.
 
-7. Database Design
+8. Database Design
 
 Collections include Users, Medications, Prescriptions, and Refill Requests to manage all system data efficiently.
 
-8. API Structure
+9. API Structure
 
 Includes REST APIs for authentication, medication tracking, prescription creation, and refill management.
 
-9. System Architecture
+10. System Architecture
 
 Three-layer architecture:
 
@@ -75,7 +82,7 @@ Backend (Spring Boot logic)
 
 Database (MongoDB storage)
 
-🚀 10. Project Milestones
+🚀 11. Project Milestones
 Milestone 1: Project Setup
 
 Repository creation using Git & GitHub
@@ -108,7 +115,7 @@ AI chatbot implemented using Groq API
 
 PPT preparation and project presentation
 
-11. Challenges and Solutions
+12. Challenges and Solutions
 
 Medication adherence → solved with tracking system
 
@@ -116,7 +123,7 @@ Prescription management → centralized platform
 
 Refill delays → online request system
 
-12. Future Enhancements
+13. Future Enhancements
 
 Mobile app development
 
@@ -126,10 +133,10 @@ Wearable device support
 
 AI-based reminders and analytics
 
-13. Conclusion
+14. Conclusion
 
 The system provides an efficient and secure solution for managing medications digitally, improving patient care and communication.
 
-14. Acknowledgement
+15. Acknowledgement
 
 We thank Infosys Springboard, our mentor, team members, and audience for their support and guidance in completing this project successfully.
