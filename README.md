@@ -1,135 +1,114 @@
-Online Medication & Prescription Tracker
-Overview
+📄 Online Medication & Prescription Tracker
+Project Documentation
+1. Project Overview
 
-The Online Medication & Prescription Tracker is a full-stack healthcare management system designed to help patients, doctors, and administrators manage medications and prescriptions efficiently. The platform allows doctors to prescribe medicines digitally, patients to track their medication schedules, and administrators to manage system operations.
+The Online Medication & Prescription Tracker is a full-stack healthcare management system designed to help patients, doctors, and administrators manage medications and prescriptions efficiently.
 
-The goal of this project is to improve medication adherence, simplify prescription management, and provide a centralized system for healthcare communication.
+The platform enables:
 
-Features
-Secure Authentication
+Doctors to prescribe medicines digitally
+Patients to track their medication schedules
+Administrators to manage system operations
 
-JWT-based login and authentication system
+The main goal of this project is to improve medication adherence, simplify prescription management, and provide a centralized healthcare communication system.
 
-Role-based access for Admin, Doctor, and Patient
+2. Problem Statement
 
-Medication Tracking
+In traditional healthcare systems, patients often forget to take medicines, misplace prescriptions, and face delays in refill approvals. Doctors also find it difficult to monitor patient adherence and update treatments efficiently.
 
-Patients can track their daily medication schedules
+To address these issues, a centralized digital system is required to streamline medication tracking, prescription handling, and communication between patients and healthcare providers.
 
-View dosage instructions and treatment progress
-
-Prescription Management
-
-Doctors can create, update, and manage prescriptions for patients
-
-Patients can view their prescription history
-
-Refill Requests
-
-Patients can request prescription refills
-
-Doctors can approve or reject refill requests
-
-AI Chatbot Support
-
-AI-powered chatbot to answer queries related to medicines and symptoms
-
-Uses LLaMA model integrated through Groq API
-
-Technology Stack
+3. Objectives
+To develop a secure platform for managing prescriptions
+To help patients track medication schedules and dosage
+To enable doctors to monitor and update treatments
+To automate refill request processes
+To integrate AI-based support for user queries
+4. Key Features
+4.1 Secure Authentication
+JWT-based login system
+Role-based access control (Admin, Doctor, Patient)
+4.2 Medication Tracking
+Track daily medication schedules
+View dosage and treatment progress
+4.3 Prescription Management
+Doctors create and manage prescriptions
+Patients access prescription history
+4.4 Refill Requests
+Patients request prescription refills
+Doctors approve or reject requests
+4.5 AI Chatbot Support
+Provides answers related to medicines and symptoms
+Integrated using LLaMA model via Groq API
+5. Technology Stack
 Frontend
-
 React
-
 Vite
-
 Tailwind CSS
-
 React Router
-
 TypeScript
-
 Backend
-
 Java
-
 Spring Boot
-
 REST APIs
-
 LLaMA AI Model
-
 Groq API
-
 Database
-
 MongoDB
-
 Tools
-
 VS Code
-
 Git & GitHub
-
 Postman
+6. System Architecture
 
-System Architecture
+The application follows a three-layer architecture:
 
-The application follows a full-stack architecture consisting of three main layers:
+Frontend Layer: React-based user interface
+Backend Layer: Spring Boot for business logic and APIs
+Database Layer: MongoDB for data storage
+7. System Workflow
 
-Frontend: React-based user interface for patients, doctors, and admins
+The workflow begins with user registration, where users sign up as Admin, Doctor, or Patient. After authentication using JWT, users manage their profiles. Patients track medications and schedules, while doctors prescribe and manage treatments. The system ensures smooth interaction between all roles.
 
-Backend: Spring Boot server that handles business logic and REST APIs
+8. Database Design
 
-Database: MongoDB for storing users, medications, prescriptions, and refill records
+The system uses MongoDB with the following collections:
 
-Workflow
+Users: Stores user details and roles
+Medications: Stores medicine and dosage information
+Prescriptions: Links doctors, patients, and medications
+Refill Requests: Tracks refill approval process
+9. API Structure
 
-Register – Users register as a patient, doctor, or admin.
+The backend provides REST APIs such as:
 
-Authenticate – Users log in securely using JWT authentication.
-
-Profile – Users manage their personal or professional information.
-
-Track – Patients track medications and treatment schedules.
-
-Prescribe – Doctors create and manage prescriptions for patients.
-
-Project Structure
+POST /api/auth/register – Register user
+POST /api/auth/login – User login
+GET /api/medications – Fetch medications
+POST /api/prescriptions – Create prescription
+PUT /api/refills/{id} – Approve/reject refill
+10. Project Structure
 Online-Medication-Prescription-Tracker
 │
-├── backend/        # Spring Boot backend application
-├── frontend/       # React frontend application
-├── docs/           # Project documentation
+├── backend/        # Spring Boot backend
+├── frontend/       # React frontend
+├── documentation/  # Project documents
 ├── README.md
 └── .gitignore
 
-Future Enhancements
+11. Future Enhancements
+Mobile application development
+Integration with pharmacy systems
+Wearable device integration
+Advanced analytics dashboard
+AI-based personalized reminders
+12. Setup Instructions
+Create a Groq API key
+Set environment variable:
+GROQ_API_KEY=your_api_key_here
 
-Mobile application for easier access
+Run backend application
+Run frontend application
+13. Acknowledgement
 
-Integration with pharmacy systems and hospital records
-
-Wearable device integration for health monitoring
-
-Advanced analytics dashboard for treatment insights
-
-AI-driven personalized medication reminders
-
-## Setup Instructions
-
-1. Create a Groq API key from Groq dashboard
-2. Set environment variable:
-
-   GROQ_API_KEY=your_api_key_here
-
-3. Run the backend application
-
-
-Acknowledgement
-
-We would like to thank Infosys Springboard for providing this learning opportunity and platform. Special thanks to our mentor for their guidance and support throughout the project. We also appreciate the teamwork and collaboration of all team members who contributed to the successful development of this project.
-
-Authors
-
-Ashu
+We would like to thank Infosys Springboard for providing this opportunity. Special thanks to our mentor for guidance and support. We also appreciate the efforts of all team members who contributed to the successful completion of this project.
