@@ -44,7 +44,7 @@ export function Register() {
     setLoading(true);
 
     try {
-      const success = await register(
+      const result = await register(
         formData.email,
         formData.password,
         formData.name,
@@ -52,12 +52,12 @@ export function Register() {
         formData.specialty || undefined
       );
 
-      if (success) {
+      if (result.success) {
         // Registration successful - redirect to login page
         navigate('/login');
       } else {
-        // Registration failed - email already exists
-        setError('Email already exists. Please use a different email or try logging in.');
+        // Registration failed - display backend error message
+        setError(result.error || 'Registration failed. Please try again.');
       }
     } catch (err) {
       setError('An error occurred. Please try again.');

@@ -34,9 +34,9 @@ export function Login() {
     setLoading(true);
 
     try {
-      const success = await login(email, password);
-      if (!success) {
-        setError('Invalid email or password');
+      const result = await login(email, password);
+      if (!result.success) {
+        setError(result.error || 'Invalid email or password');
       }
     } catch (err) {
       setError('An error occurred. Please try again.');
