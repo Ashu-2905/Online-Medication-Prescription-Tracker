@@ -47,6 +47,10 @@ echo.
 echo Press any key to test the complete system...
 pause >nul
 
+
+
+
+
 echo.
 echo Testing Complete System Integration...
 cd /d "c:\Users\ashu0\Downloads\Medication and Prescription Tracker (3) (1)\backend"

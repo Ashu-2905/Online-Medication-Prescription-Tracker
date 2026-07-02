@@ -22,6 +22,8 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
 
@@ -35,7 +37,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // ✅ LOGIN (REAL BACKEND ONLY)
   const login = async (email: string, password: string): Promise<{ success: boolean; error?: string }> => {
     try {
-      const response = await fetch('http://localhost:8080/api/auth/login', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -79,7 +81,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     specialty?: string
   ): Promise<{ success: boolean; error?: string }> => {
     try {
-      const response = await fetch('http://localhost:8080/api/auth/register', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
